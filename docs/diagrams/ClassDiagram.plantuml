@@ -1,0 +1,43 @@
+@startuml classDiagram
+
+class Persona {
+  # string telefono
+  # string nombre 
+  # string direccion
+
+}
+
+class Jugador {
+  + uint numero
+  + string posicion
+  + Equipo equipo
+}
+
+class Entrenador {
+  + string nivelAcreditacion
+  + uint aniosExperiencia
+  + Equipo equiposEntrenados[]
+}
+
+class Equipo {
+  + string nombre
+  - string registro
+  + Jugador jugadores[]
+  + Jugador capitán
+  + Entrenador entrenador
+}
+
+class Juego {
+  + string localidad
+  + uint puntuacion
+  + uint sets
+  + Equipo equipos[] 
+}
+
+
+Equipo "*" *-- "1" Entrenador : tiene
+Juego "1" -- "2" Equipo : tiene
+Equipo "1" *-- "6..20" Jugador : tiene
+Persona <|-- Jugador
+Persona <|-- Entrenador
+@enduml

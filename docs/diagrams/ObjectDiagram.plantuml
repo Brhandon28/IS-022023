@@ -1,0 +1,252 @@
+@startuml ObjectDiagram
+left to right direction
+
+object VenezuelaVSColombia {
+localidad = "Estadio Arena Santiago"
+puntuacion = 3-2
+sets = 2
+equipos = "Venezuela, Colombia"
+}
+
+object Colombia {
+nombre = "Colombia Volley"
+registro = "si"
+jugadores = "Juan, Carlos, Luis, Andrés, Pedro, Alejandro, José, Diego, Manuel, Gabriel"
+capitan = Carlos
+entrenador = Pedro Navaja
+}
+
+object Venezuela {
+nombre = "Venezuela Volley"
+registro = "si"
+jugadores = "Gabriel, Manuel, Diego, José, Alejandro, Juan, Andrés, Luis, Carlos, Pedro"
+capitan = Carlos
+entrenador = Juanito Alimania
+}
+
+object PedroNavaja {
+telefono = "111-212"
+nombre = "Pedro Navaja"
+direccion = "Calle Principal, Ciudad Colombia"
+nivelAcreditacion = "Nivel 5"
+aniosExperiencia = 24
+equiposEntrenados = Colombia, Uruguay, Panama, Cuba
+}
+
+object JuanitoAlimania {
+telefono = "331-333"
+nombre = "Juanito Alimania"
+direccion = "Calle Principal, Ciudad Caracas"
+nivelAcreditacion = "Nivel 5"
+aniosExperiencia = 26
+equiposEntrenados = Venezuela, El Salvador, Honduras, Mexico
+}
+
+object JuanCortez {
+telefono = "555-1234"
+nombre = "Juan Cortez"
+direccion = "Calle Principal, Ciudad Colombia"
+numero = 1
+posicion = "armador"
+equipo = "Colombia"
+}
+
+object CarlosGómez {
+telefono = "555-5678"
+nombre = "Carlos Gómez"
+direccion = "Avenida Central, Ciudad Colombia"
+numero = 2
+posicion = "opuesto"
+equipo = "Colombia"
+}
+
+object LuisRodríguez {
+telefono = "555-9012"
+nombre = "Luis Rodríguez"
+direccion = "Carrera 1, Ciudad Colombia"
+numero = 3
+posicion = "central"
+equipo = "Colombia"
+}
+
+object AndrésLópez {
+telefono = "555-3456"
+nombre = "Andrés López"
+direccion = "Avenida Principal, Ciudad Colombia"
+numero = 4
+posicion = "líbero"
+equipo = "Colombia"
+}
+
+object PedroRamírez {
+telefono = "555-7890"
+nombre = "Pedro Ramírez"
+direccion = "Calle Secundaria, Ciudad Colombia"
+numero = 5
+posicion = "atacante"
+equipo = "Colombia"
+}
+
+object AlejandroMartínez {
+telefono = "555-2345"
+nombre = "Alejandro Martínez"
+direccion = "Carrera 2, Ciudad Colombia"
+numero = 6
+posicion = "punta"
+equipo = "Colombia"
+}
+
+object JoséGonzález {
+telefono = "555-6789"
+nombre = "José González"
+direccion = "Avenida Secundaria, Ciudad Colombia"
+numero = 7
+posicion = "levantador"
+equipo = "Colombia"
+}
+
+object DiegoHerrera {
+telefono = "555-0123"
+nombre = "Diego Herrera"
+direccion = "Calle Principal, Ciudad Colombia"
+numero = 8
+posicion = "defensor"
+equipo = "Colombia"
+}
+
+object ManuelVargas {
+telefono = "555-4567"
+nombre = "Manuel Vargas"
+direccion = "Avenida Central, Ciudad Colombia"
+numero = 9
+posicion = "bloqueador"
+equipo = "Colombia"
+}
+
+object GabrielMedina {
+telefono = "555-8901"
+nombre = "Gabriel Medina"
+direccion = "Carrera 1, Ciudad Colombia"
+numero = 10
+posicion = "receptor"
+equipo = "Colombia"
+}
+
+object PedroFernández {
+telefono = "555-1234"
+nombre = "Pedro Fernández"
+direccion = "Calle Principal, Ciudad Venezuela"
+numero = 1
+posicion = "armador"
+equipo = "Venezuela"
+}
+
+object CarlosRodríguez {
+telefono = "555-5678"
+nombre = "Carlos Rodríguez"
+direccion = "Avenida Central, Ciudad Venezuela"
+numero = 2
+posicion = "opuesto"
+equipo = "Venezuela"
+}
+
+object LuisGonzález {
+telefono = "555-9012"
+nombre = "Luis González"
+direccion = "Carrera 1, Ciudad Venezuela"
+numero = 3
+posicion = "central"
+equipo = "Venezuela"
+}
+
+object AndrésPérez {
+telefono = "555-3456"
+nombre = "Andrés Pérez"
+direccion = "Avenida Principal, Ciudad Venezuela"
+numero = 4
+posicion = "líbero"
+equipo = "Venezuela"
+}
+
+object JuanRamírez {
+telefono = "555-7890"
+nombre = "Juan Ramírez"
+direccion = "Calle Secundaria, Ciudad Venezuela"
+numero = 5
+posicion = "atacante"
+equipo = "Venezuela"
+}
+
+object AlejandroHernández {
+telefono = "555-2345"
+nombre = "Alejandro Hernández"
+direccion = "Carrera 2, Ciudad Venezuela"
+numero = 6
+posicion = "punta"
+equipo = "Venezuela"
+}
+
+object JoséMartínez {
+telefono = "555-6789"
+nombre = "José Martínez"
+direccion = "Avenida Secundaria, Ciudad Venezuela"
+numero = 7
+posicion = "levantador"
+equipo = "Venezuela"
+}
+
+object DiegoLópez {
+telefono = "555-0123"
+nombre = "Diego López"
+direccion = "Calle Principal, Ciudad Venezuela"
+numero = 8
+posicion = "defensor"
+equipo = "Venezuela"
+}
+
+object ManuelSilva {
+telefono = "555-4567"
+nombre = "Manuel Silva"
+direccion = "Avenida Central, Ciudad Venezuela"
+numero = 9
+posicion = "bloqueador"
+equipo = "Venezuela"
+}
+
+object GabrielTorres {
+telefono = "555-8901"
+nombre = "Gabriel Torres"
+direccion = "Carrera 1, Ciudad Venezuela"
+numero = 10
+posicion = "receptor"
+equipo = "Venezuela"
+}
+
+Colombia *-- JuanCortez
+Colombia *-- CarlosGómez
+Colombia *-- LuisRodríguez
+Colombia *-- AndrésLópez
+Colombia *-- PedroRamírez
+Colombia *-- AlejandroMartínez
+Colombia *-- JoséGonzález
+Colombia *-- DiegoHerrera
+Colombia *-- ManuelVargas
+Colombia *-- GabrielMedina
+Colombia *-- PedroNavaja
+
+Venezuela *-- PedroFernández
+Venezuela *-- CarlosRodríguez
+Venezuela *-- LuisGonzález
+Venezuela *-- AndrésPérez
+Venezuela *-- JuanRamírez
+Venezuela *-- AlejandroHernández
+Venezuela *-- JoséMartínez
+Venezuela *-- DiegoLópez
+Venezuela *-- ManuelSilva
+Venezuela *-- GabrielTorres
+Venezuela *-- JuanitoAlimania
+
+Colombia -- VenezuelaVSColombia
+Venezuela -- VenezuelaVSColombia
+
+@enduml
